@@ -13,7 +13,7 @@ export class AppComponent {
 
   playSound() {
     const audio = new Audio();
-    audio.src = './proud-fart-288263.mp3';
+    audio.src = 'proud-fart-288263.mp3';
     audio.load();
     audio.play();
   }
