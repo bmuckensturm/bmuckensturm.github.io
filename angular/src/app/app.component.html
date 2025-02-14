@@ -1,9 +1,5 @@
 <main class="main">
-  <div class="example-box" cdkDragBoundary=".main" cdkDrag>DRAG ME</div>
-  <div class="content">
-    <div class="left-side">
-      <h1>Hello, {{ title }}</h1>
-      <p>Congratulations! Your app is running. 🎉</p>
-    </div>
-  </div>
+  @for (item of ids; track item) {
+    <div class="example-box" cdkDragBoundary=".main" cdkDrag (click)="playSound()"></div>
+  }
 </main>

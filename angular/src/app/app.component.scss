@@ -1,18 +1,7 @@
-html {
-    margin: 0px;
-    overflow: hidden;
-}
-
-body {
-    padding: 0;
-    margin: 0px;
-    overflow: hidden;
-}
-
 .main {
     width: 100vw;
     height: 100vh;
-    background-color: aqua;
+    background-color: rgb(54, 29, 8);
     overflow: hidden;
 }
 
@@ -20,13 +9,15 @@ body {
     width: 80px;
     height: 80px;
     border: solid 1px #ccc;
-    color: rgba(0, 0, 0, 0.87);
+    // color: rgba(0, 0, 0, 0.87);
     cursor: move;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: #fff;
+    background-color: #945e21;
+    background-image: url('https://emojiisland.com/cdn/shop/products/Poop_Emoji_7b204f05-eec6-4496-91b1-351acc03d2c7_large.png?v=1571606036');
+    background-size: cover;
     border-radius: 4px;
     margin-right: 25px;
     position: relative;
@@ -38,6 +29,7 @@ body {
   }
 
   .example-box:active {
+    z-index: 99;
     box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
                 0 8px 10px 1px rgba(0, 0, 0, 0.14),
                 0 3px 14px 2px rgba(0, 0, 0, 0.12);

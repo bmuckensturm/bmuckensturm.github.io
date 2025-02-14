@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {CdkDrag} from '@angular/cdk/drag-drop';
+import { CdkDrag } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +9,12 @@ import {CdkDrag} from '@angular/cdk/drag-drop';
 })
 export class AppComponent {
   title = 'angular';
+  ids = Array.from(Array(44).keys());
+
+  playSound() {
+    const audio = new Audio();
+    audio.src = './proud-fart-288263.mp3';
+    audio.load();
+    audio.play();
+  }
 }
