@@ -9,7 +9,7 @@ import { CdkDrag } from '@angular/cdk/drag-drop';
 })
 export class AppComponent {
   title = 'angular';
-  ids = Array.from(Array(44).keys());
+  ids = Array.from(Array(11).keys());
 
   playSound() {
     const audio = new Audio();
