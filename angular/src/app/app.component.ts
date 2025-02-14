@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CdkDrag } from '@angular/cdk/drag-drop';
 
 @Component({
@@ -7,13 +7,9 @@ import { CdkDrag } from '@angular/cdk/drag-drop';
   styleUrl: './app.component.scss',
   imports: [CdkDrag]
 })
-export class AppComponent {
-  title = 'angular';
+export class AppComponent implements OnInit {
   ids = Array.from(Array(12).keys());
 
-  playSound() {
-    const audio = new Audio('proud-fart-288263.mp3');
-    audio.load();
-    audio.play();
+  ngOnInit(): void {
   }
 }

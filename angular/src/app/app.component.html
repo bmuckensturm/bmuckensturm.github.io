@@ -1,5 +1,7 @@
 <main class="main">
   @for (item of ids; track item) {
-    <div class="example-box" cdkDragBoundary=".main" cdkDrag (click)="playSound()"></div>
+    <div class="example-box" cdkDragBoundary=".main" cdkDrag (click)="myAudio.play()">
+      <audio #myAudio src="proud-fart-288263.mp3"></audio>
+    </div>
   }
 </main>
