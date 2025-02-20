@@ -1,11 +1,12 @@
 .main {
     width: min(70vh, 100vw);
-    aspect-ratio: 7/10;
+    height: 100%;
+    padding-top: 3vh;
     margin: auto;
-    background-color: rgb(54, 29, 8);
     overflow: hidden;
     display: flex;
     justify-content: space-around;
+    background-color: rgb(54, 29, 8);
     // background-image: url("/assets/images/jlr.gif");
     // background-size:100% 100%;
 }
