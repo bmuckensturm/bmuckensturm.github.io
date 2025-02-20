@@ -1,7 +1,24 @@
 <main class="main">
-  @for (item of ids; track item) {
-    <div class="example-box" cdkDragBoundary=".main" cdkDrag (cdkDragEnded)="audio.play()">
-      <audio #audio src="assets/audio/fart-{{(item % 3) + 1}}.mp3"></audio>
+    <div
+      cdkDropList
+      #todoList="cdkDropList"
+      [cdkDropListData]="todo"
+      [cdkDropListConnectedTo]="[doneList]"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)">
+      @for (item of todo; track item) {
+        <div class="example-box" cdkDrag></div>
+      }
     </div>
-  }
+    <div
+      cdkDropList
+      #doneList="cdkDropList"
+      [cdkDropListData]="done"
+      [cdkDropListConnectedTo]="[todoList]"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)">
+      @for (item of done; track item) {
+        <div class="example-box" cdkDrag></div>
+      }
+    </div>
 </main>
