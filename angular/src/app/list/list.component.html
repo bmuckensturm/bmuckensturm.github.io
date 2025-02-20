@@ -1,0 +1,5 @@
+<div class="app-list" cdkDropList [cdkDropListData]="items" (cdkDropListDropped)="drop($event)">
+    @for (item of items; track item) {
+        <app-tile />
+    }
+</div>

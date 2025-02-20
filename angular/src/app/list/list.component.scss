@@ -1,0 +1,19 @@
+:host {
+    width: 10%;
+}
+
+.app-list {
+    width: 100%;
+    margin: 1%;
+    padding: 1%;
+    aspect-ratio: 1/8;
+    background: gray;
+    border: 2px solid black;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.app-list.cdk-drop-list-dragging .app-tile:not(.cdk-drag-placeholder) {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
